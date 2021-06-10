@@ -6,12 +6,11 @@
 }
 
 :root {
-    --base-color: #fdfbf3;
-    --main-color: #fbeec1;
-    --first-color: #daad86;
-    --second-color: #bc986a;
-    --third-color: #8d8741;
-    --fourth-color: #659dbd;
+    --base-color: #eae7dc;
+    --main-color: #d8c3a5;
+    --first-color: #8e8d8a;
+    --second-color: #e98074;
+    --third-color: #e85a4f;
 }
 
 body {
@@ -27,7 +26,6 @@ body {
 
 .main-container {
     position: relative;
-    background-color: var(--base-color);
     width: 80%;
     height: 100%;
 }
@@ -85,7 +83,7 @@ body {
 }
 
 .nav-red {
-    background-color: var(--fourth-color);
+    background-color: var(--second-color);
     width: 95%;
     transition-delay: 0.1s;
 }
@@ -252,10 +250,11 @@ h1 {
 .subscribe-btn {
     height: 30px;
     font-size: 1.1rem;
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     font-family: inherit;
     font-size: 1.1rem;
-    border: solid 1px var(--first-color);
+    border: solid 1px var(--third-color);
+    box-shadow: 2px -3px 4px 2px var(--first-color);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -269,7 +268,7 @@ aside {
     margin-top: 450px;
     /*margin-right: 40px;*/
     margin-bottom: 50px;
-    box-shadow: 2px -3px 12px 2px var(--second-color);
+    box-shadow: 2px -3px 12px 2px var(--first-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -383,7 +382,7 @@ aside {
 /******** CONTENT 1 ***************/
 .content1 {
     background-color: var(--main-color);
-    box-shadow: 2px -3px 12px 2px var(--second-color);
+    box-shadow: 2px -3px 12px 2px var(--first-color);
     height: auto;
     width: 65%;
     margin: 450px auto 0 0;
@@ -584,7 +583,7 @@ aside {
 
 /***************** FOOTER *******************/
 .footer-container {
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
     width: 100vw;
     height: 150px;
     margin: 0;
