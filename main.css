@@ -76,7 +76,7 @@ body {
     background-color: var(--third-color);
     width: 60%;
     max-width: 100px;
-    min-width: 250px;
+    min-width: 280px;
     transition-delay: 0.2s;
 }
 
