@@ -6,11 +6,11 @@
 }
 
 :root {
-    --base-color: #eae7dc;
-    --main-color: #d8c3a5;
-    --first-color: #8e8d8a;
-    --second-color: #e98074;
-    --third-color: #e85a4f;
+    --base-color: #FCFEF5;
+    --main-color: #FAFBE3;
+    --first-color: #E9FFE1;
+    --second-color: #D6E6C3;
+    --third-color: #CDCFB7;
 }
 
 body {
@@ -74,7 +74,7 @@ body {
     background-color: var(--third-color);
     width: 60%;
     max-width: 100px;
-    min-width: 250px;
+    min-width: 280px;
     transition-delay: 0.2s;
 }
 
@@ -250,11 +250,11 @@ h1 {
 .subscribe-btn {
     height: 30px;
     font-size: 1.1rem;
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     font-family: inherit;
     font-size: 1.1rem;
-    border: solid 1px var(--third-color);
-    box-shadow: 2px -3px 4px 2px var(--first-color);
+    border: none;
+    box-shadow: 2px -3px 4px 2px var(--second-color);
     border-radius: 5px;
     cursor: pointer;
 }
