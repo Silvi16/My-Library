@@ -6,11 +6,12 @@
 }
 
 :root {
-    --base-color: #eae7dc;
-    --main-color: #d8c3a5;
-    --first-color: #8e8d8a;
-    --second-color: #e98074;
-    --third-color: #e85a4f;
+    --base-color: #fef9c7;
+    --main-color: #fce181;
+    --first-color: #edeae5;
+    --second-color: #9fedd7;
+    --third-color: #026670;
+    --shadow-color: #b9b8b6;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 
@@ -50,7 +52,7 @@ body {
 
 .nav-btn {
     border: none;
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     border-radius: 3px;
     cursor: pointer;
     font-size: 20px;
@@ -73,8 +75,8 @@ body {
 .nav-black {
     background-color: var(--third-color);
     width: 60%;
-    max-width: 100px;
-    min-width: 250px;
+    max-width: 150px;
+    min-width: 280px;
     transition-delay: 0.2s;
 }
 
@@ -93,7 +95,7 @@ body {
 }
 
 .nav-white {
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     width: 95%;
     padding: 40px;
     position: relative;
@@ -105,7 +107,7 @@ body {
 }
 
 .close-btn {
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     opacity: 0.3;
     position: absolute;
     top: 50%;
@@ -139,7 +141,7 @@ body {
 
 /******* HEADER *****************/
 .head {
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     position: relative;
     display: flex;
     flex-direction: row;
@@ -179,7 +181,7 @@ h1 {
 }
 
 .search .search-input {
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     border: 0;
     font-size: 18px;
     padding: 15px;
@@ -190,7 +192,7 @@ h1 {
 }
 
 .search-btn {
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     border: 0;
     cursor: pointer;
     font-size: 24px;
@@ -241,7 +243,7 @@ h1 {
 .log-in-btn {
     font-family: inherit;
     font-size: 1.1rem;
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     border: none;
     outline: none;
     cursor: pointer;
@@ -253,8 +255,8 @@ h1 {
     background-color: var(--second-color);
     font-family: inherit;
     font-size: 1.1rem;
-    border: solid 1px var(--third-color);
-    box-shadow: 2px -3px 4px 2px var(--first-color);
+    border: none;
+    box-shadow: 2px -3px 4px 2px var(--shadow-color);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -262,13 +264,13 @@ h1 {
 
 /****** ASIDE *****************/
 aside {
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     float: right;
     width: 25%;
     margin-top: 450px;
     /*margin-right: 40px;*/
     margin-bottom: 50px;
-    box-shadow: 2px -3px 12px 2px var(--first-color);
+    box-shadow: 2px -3px 12px 2px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,7 +303,7 @@ aside {
 /********** SLIDER ****************/
 .expanding {
     position: absolute;
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     height: 400px;
     width: 100%;
     display: flex;
@@ -381,8 +383,8 @@ aside {
 
 /******** CONTENT 1 ***************/
 .content1 {
-    background-color: var(--main-color);
-    box-shadow: 2px -3px 12px 2px var(--first-color);
+    background-color: var(--first-color);
+    box-shadow: 2px -3px 12px 2px var(--shadow-color);
     height: auto;
     width: 65%;
     margin: 450px auto 0 0;
@@ -438,6 +440,7 @@ aside {
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    color: var(--third-color);
 }
 
 .recent-article p {
@@ -532,7 +535,7 @@ aside {
 
 .grid2 {
     width: 100%;
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -583,7 +586,7 @@ aside {
 
 /***************** FOOTER *******************/
 .footer-container {
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     width: 100vw;
     height: 150px;
     margin: 0;
