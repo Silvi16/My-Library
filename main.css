@@ -6,11 +6,12 @@
 }
 
 :root {
-    --base-color: #FCFEF5;
-    --main-color: #FAFBE3;
-    --first-color: #E9FFE1;
-    --second-color: #D6E6C3;
-    --third-color: #CDCFB7;
+    --base-color: #f3f2e8;
+    --main-color: #DDCDB3;
+    --first-color: #F9D57D;
+    --second-color: #FE884B;
+    --third-color: #B48D70;
+    --shadow-color: #554234;
 }
 
 body {
@@ -108,7 +109,7 @@ body {
     background-color: var(--main-color);
     opacity: 0.3;
     position: absolute;
-    top: 50%;
+    top: 4%;
     right: 30px;
 }
 
@@ -156,7 +157,7 @@ body {
 }
 
 h1 {
-    color: var(--third-color);
+    color: var(--shadow-color);
     height: 60px;
     margin-left: 300px;
     vertical-align: middle;
@@ -250,11 +251,11 @@ h1 {
 .subscribe-btn {
     height: 30px;
     font-size: 1.1rem;
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     font-family: inherit;
     font-size: 1.1rem;
     border: none;
-    box-shadow: 2px -3px 4px 2px var(--second-color);
+    box-shadow: 2px -3px 6px 2px var(--shadow-color);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -268,7 +269,7 @@ aside {
     margin-top: 450px;
     /*margin-right: 40px;*/
     margin-bottom: 50px;
-    box-shadow: 2px -3px 12px 2px var(--first-color);
+    box-shadow: 2px -3px 12px 2px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,7 +383,7 @@ aside {
 /******** CONTENT 1 ***************/
 .content1 {
     background-color: var(--main-color);
-    box-shadow: 2px -3px 12px 2px var(--first-color);
+    box-shadow: 2px -3px 12px 2px var(--shadow-color);
     height: auto;
     width: 65%;
     margin: 450px auto 0 0;
@@ -451,7 +452,7 @@ aside {
 
 .continue a {
     text-decoration: none;
-    color: var(--fourth-color);
+    color: var(--second-color);
     
 }
 
@@ -576,7 +577,7 @@ aside {
 .short-continue a {
     margin-bottom: 50px;
     text-decoration: none;
-    color: var(--fourth-color)
+    color: var(--second-color)
 }
 
 
