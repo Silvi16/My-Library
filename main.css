@@ -6,39 +6,40 @@
 }
 
 :root {
-    --base-color: #fdfbf3;
-    --main-color: #fbeec1;
-    --first-color: #daad86;
-    --second-color: #bc986a;
-    --third-color: #8d8741;
-    --fourth-color: #659dbd;
+    --body-color: #fff;
+    --base-color: #ECE1D6;
+    --main-color: #DBD0C6;
+    --first-color: #786E65;
+    --second-color: #645A52;
+    --third-color: #190F03;
+    --shadow-color: #554234;
+    --continue-color: #00AA93;
 }
 
 body {
-    background-color: var(--base-color);
+    background-color: var(--body-color);
     font-family: 'Cormorant Garamont', serif;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
-
 
 .main-container {
     position: relative;
-    background-color: var(--base-color);
     width: 80%;
     height: 100%;
 }
 
 .divider {
-    background-color: var(--base-color);
+    background-color: var(--body-color);
     height: 50px;
     width: 100%;
 }
 
-/*********** NAV ******************/
+/*********** NAV ************************************/
 .text {
     text-transform: uppercase;
 }
@@ -85,7 +86,7 @@ body {
 }
 
 .nav-red {
-    background-color: var(--fourth-color);
+    background-color: var(--second-color);
     width: 95%;
     transition-delay: 0.1s;
 }
@@ -95,7 +96,7 @@ body {
 }
 
 .nav-white {
-    background-color: var(--main-color);
+    background-color: var(--body-color);
     width: 95%;
     padding: 40px;
     position: relative;
@@ -107,10 +108,10 @@ body {
 }
 
 .close-btn {
-    background-color: var(--main-color);
+    background-color: var(--body-color);
     opacity: 0.3;
     position: absolute;
-    top: 50%;
+    top: 4%;
     right: 30px;
 }
 
@@ -139,7 +140,7 @@ body {
     padding-left: 20px;
 }
 
-/******* HEADER *****************/
+/*********** HEADER ******************************/
 .head {
     background-color: var(--main-color);
     position: relative;
@@ -158,7 +159,7 @@ body {
 }
 
 h1 {
-    color: var(--third-color);
+    color: var(--shadow-color);
     height: 60px;
     margin-left: 300px;
     vertical-align: middle;
@@ -173,7 +174,7 @@ h1 {
     font-style: italic;
 }
 
-    /********* SEARCH ********/
+/********* SEARCH *****************************/
 .search {
     vertical-align: middle;
     position: relative;
@@ -252,16 +253,17 @@ h1 {
 .subscribe-btn {
     height: 30px;
     font-size: 1.1rem;
-    background-color: var(--main-color);
+    background-color: var(--base-color);
     font-family: inherit;
     font-size: 1.1rem;
-    border: solid 1px var(--first-color);
+    border: none;
+    box-shadow: 2px -3px 6px 2px var(--shadow-color);
     border-radius: 5px;
     cursor: pointer;
 }
 
 
-/****** ASIDE *****************/
+/*********** ASIDE *************************************/
 aside {
     background-color: var(--main-color);
     float: right;
@@ -269,7 +271,7 @@ aside {
     margin-top: 450px;
     /*margin-right: 40px;*/
     margin-bottom: 50px;
-    box-shadow: 2px -3px 12px 2px var(--second-color);
+    box-shadow: 2px -3px 12px 2px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,10 +301,9 @@ aside {
     line-height: 1.5rem;
 }
 
-/********** SLIDER ****************/
+/************* SLIDER **********************************/
 .expanding {
     position: absolute;
-    background-color: var(--main-color);
     height: 400px;
     width: 100%;
     display: flex;
@@ -380,13 +381,12 @@ aside {
     background-image: url(img/book9.jpg);
 }
 
-/******** CONTENT 1 ***************/
+/************ CONTENT 1 ********************************/
 .content1 {
-    background-color: var(--main-color);
-    box-shadow: 2px -3px 12px 2px var(--second-color);
+    background-color: var(--body-color);
     height: auto;
     width: 65%;
-    margin: 450px auto 0 0;
+    margin: 450px auto 5px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -400,7 +400,6 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    
 }
 
 .grid1:last-child {
@@ -413,7 +412,6 @@ aside {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 
 .imgRecent {
@@ -439,10 +437,13 @@ aside {
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    color: var(--third-color);
 }
 
 .recent-article p {
     text-align: left;
+    color: var(--shadow-color);
+    line-height: 1.5rem;
 }
 
 .continue {
@@ -452,11 +453,10 @@ aside {
 
 .continue a {
     text-decoration: none;
-    color: var(--fourth-color);
-    
+    color: var(--continue-color);
 }
 
-/********* PARALLAX ***************/
+/************ PARALLAX *********************************/
 .parallax {
     position: relative;
     z-index: 100;
@@ -467,13 +467,12 @@ aside {
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
-    /*z-index: -2;*/
 }
 
 #trans {
     background-image: url('img/parallax.jpg');
     border-radius: 30px;
-    /*filter: blur(1px);*/
+    filter: grayscale(0.7);
     width: 100%;
     height: 500px;
     background-attachment: fixed;
@@ -489,7 +488,6 @@ aside {
     position: absolute;
     color: black;
     font-size: 46px;
-    /*margin-bottom: -20px 0 20px;*/
     letter-spacing: 0.3rem;
     text-align: center;
     vertical-align: middle;
@@ -518,22 +516,20 @@ aside {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /*z-index: -1;*/
 }
 
-/********* CONTENT 2 **************/
+/************ CONTENT 2 *********************************/
 .content2 {
     width: 100%;
     height: 350px;
     display: flex;
     align-content: center;
     justify-content: center;
-
 }
 
 .grid2 {
     width: 100%;
-    background-color: var(--main-color);
+    background-color: var(--body-color);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -555,7 +551,6 @@ aside {
     display: flex;
     align-content: center;
     justify-content: center;
-
 }
 
 .short-article {
@@ -572,19 +567,18 @@ aside {
 .short-article h4 {
     font-size: 1.2rem;
     font-style: italic;
+    color: var(--third-color);
 }
 
 .short-continue a {
     margin-bottom: 50px;
     text-decoration: none;
-    color: var(--fourth-color)
+    color: var(--continue-color)
 }
 
-
-
-/***************** FOOTER *******************/
+/***************** FOOTER *******************************/
 .footer-container {
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
     width: 100vw;
     height: 150px;
     margin: 0;
@@ -594,6 +588,7 @@ aside {
     padding-top: 70px;
     font-family: inherit;
     font-size: 1.2rem;
+    color: var(--main-color);
 }
 
 
