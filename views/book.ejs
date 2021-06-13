@@ -1,0 +1,34 @@
+<%- include('./partials/head.ejs') %>
+<link rel="stylesheet" href="create.css">
+<!------------------------- NAV ----------------------------------------->
+<%- include('./partials/nav.ejs') %>
+<%- include('./partials/header.ejs') %>
+<!----------------------- MAIN CONTAINER --------------------------------->
+
+<div class="book-container">
+
+    <section class="container content">
+
+                
+        <div class="box">
+            <div class="box-img">
+                <img src="img/aperitif.jpg" name="blogImg" alt="image">
+            </div>
+            <div class="box-text">
+            <h2> <%= bookTitle %> </h2>
+
+            <p> <%= description %></p> 
+            </div>
+        </div>
+        
+
+    </section>
+
+    
+
+</div>
+<%- include('./partials/footer.ejs') %>
+
+        <script src="public/script.js" async defer></script>
+    </body>
+</html>

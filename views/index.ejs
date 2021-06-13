@@ -35,6 +35,7 @@
 
 <!---------------------- SLIDER -------------------->
         <div class="expanding">
+            
             <div class="panel img1 activePanel">
                 <div class="img1"></div>
                 <h3>Read Every day</h3>
@@ -69,58 +70,59 @@
                 <h3>What is so Funny?</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-
+            
         </div>
 
 <!-------------------- content 1 ------------------>
 
             <div class="content1">
+                
                 <div class="grid1">
-
+                    <%  bookEntries.forEach(bookEntry => { %>
                     <div class="recent">
                         
                         <img class="imgRecent" src="img/book1.jpg" alt="">
                         <div class="recent-article">
-                            <h4>title</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, perspiciatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas omnis fugit ullam dolorem consequatur voluptate iusto saepe atque ipsum dolorum!</p>
+                            
+                            <h4><%= bookEntries.bookTitle %></h4>
+                            <p><%= bookEntry.description %></p>
                             <p class="continue"><a href="#">Continue reading...</a></p>
+                            
                         </div>
-                    </div>
-
-
-                    <div class="recent">
                         
+                    </div>
+                    <% }) %>
+
+                    <!--<div class="recent">
                         <img class="imgRecent" src="img/book2.jpg" alt="">
                         <div class="recent-article">
-                            <h4>title</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, perspiciatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas omnis fugit ullam dolorem consequatur voluptate iusto saepe atque ipsum dolorum!</p>
+                            <h4>bookEntry.bookTitle</h4>
+                            <p>bookEntry.description</p>
                             <p class="continue"><a href="#">Continue reading...</a></p>
                         </div>
                     </div>
 
                     <div class="recent">
-                        
                         <img class="imgRecent" src="img/book3.jpg" alt="">
                         <div class="recent-article">
-                            <h4>title</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, perspiciatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas omnis fugit ullam dolorem consequatur voluptate iusto saepe atque ipsum dolorum!</p>
+                            <h4> bookEntry.bookTitle </h4>
+                            <p> bookEntry.description </p>
                             <p class="continue"><a href="#">Continue reading...</a></p>
                         </div>
                     </div>
 
                     <div class="recent">
-                        
                         <img class="imgRecent" src="img/book4.jpg" alt="">
                         <div class="recent-article">
-                            <h4>title</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, perspiciatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas omnis fugit ullam dolorem consequatur voluptate iusto saepe atque ipsum dolorum!</p>
+                            <h4> bookEntry.bookTitle </h4>
+                            <p> bookEntry.description </p>
                             <p class="continue"><a href="#">Continue reading...</a></p>
                         </div>
-                    </div>
-
-                    </div>
-
+                    </div>-->
+                    
                 </div>
+                    
+            </div>
 <div class="divider"></div>
 <!------------------------- PARALLAX ------------------------------------->
 

@@ -10,41 +10,41 @@
         <h2 class="request-title">CREATE AN ENTRY</h2>
         <div class="form-container">
 
-            <form action="/" method="post">
+            <form action="/create" method="post">
                 <div class="box one">
                     <label for="title">Title</label>
-                    <input class="request-input long" type="text">
+                    <input class="request-input long" name="bookTitle" type="text">
                 </div>
                 <div class="box two">
                     <label for="name">Name</label>
-                    <input class="request-input long" type="text">
+                    <input class="request-input long" name="authorName" type="text">
                 </div>
                 <div class="box three">
                     <div class="three-one">
                         <label for="genre">Genre</label>
-                        <input class="request-input half" type="text">
+                        <input class="request-input half" name="genre" type="text">
                     </div>
                     <div class="three-two">
-                        <label class=" half-two" for="language">Release Date</label>
-                        <input class="request-input half-two" type="text">
+                        <label class=" half-two" for="release_date">Release Date</label>
+                        <input class="request-input half-two" name="releaseDate" type="text">
                     </div>
                 </div>
                 <div class="box four">
                     <div class="four-one">
-                        <label for="language">Page Count</label>
-                        <input class="request-input half" type="text">
+                        <label for="page_count">Page Count</label>
+                        <input class="request-input half" name="pageCount" type="text">
                     </div>
                     <div class="four-one">
-                        <label class=" half-two" for="language">Rating</label>
-                        <input class="request-input half-two" type="text">
+                        <label class=" half-two" for="rating">Rating</label>
+                        <input class="request-input half-two" name="rating" type="text">
                     </div>
                 </div>
                 <div class="box five long">
                     <label for="language">Language</label>
-                    <input class="request-input long" type="text">
+                    <input class="request-input long" name="lang" type="text">
                 </div>
                 <div class="box six">
-                    <textarea name="description" id="description" cols="82" rows="5"></textarea>
+                    <textarea name="description" id="description" name="description" cols="82" rows="5"></textarea>
                 </div>
                 <div class="btn-container">
                     <button class="request-btn">Submit</button>
