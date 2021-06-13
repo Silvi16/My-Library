@@ -1,0 +1,61 @@
+<%- include('./partials/head.ejs') %>
+<link rel="stylesheet" href="create.css">
+<!------------------------- NAV ----------------------------------------->
+<%- include('./partials/nav.ejs') %>
+<%- include('./partials/header.ejs') %>
+<!----------------------- MAIN CONTAINER --------------------------------->
+
+<div class="request-container">
+
+        <h2 class="request-title">CREATE AN ENTRY</h2>
+        <div class="form-container">
+
+            <form action="/" method="post">
+                <div class="box one">
+                    <label for="title">Title</label>
+                    <input class="request-input long" type="text">
+                </div>
+                <div class="box two">
+                    <label for="name">Name</label>
+                    <input class="request-input long" type="text">
+                </div>
+                <div class="box three">
+                    <div class="three-one">
+                        <label for="genre">Genre</label>
+                        <input class="request-input half" type="text">
+                    </div>
+                    <div class="three-two">
+                        <label class=" half-two" for="language">Release Date</label>
+                        <input class="request-input half-two" type="text">
+                    </div>
+                </div>
+                <div class="box four">
+                    <div class="four-one">
+                        <label for="language">Page Count</label>
+                        <input class="request-input half" type="text">
+                    </div>
+                    <div class="four-one">
+                        <label class=" half-two" for="language">Rating</label>
+                        <input class="request-input half-two" type="text">
+                    </div>
+                </div>
+                <div class="box five long">
+                    <label for="language">Language</label>
+                    <input class="request-input long" type="text">
+                </div>
+                <div class="box six">
+                    <textarea name="description" id="description" cols="82" rows="5"></textarea>
+                </div>
+                <div class="btn-container">
+                    <button class="request-btn">Submit</button>
+                </div>
+            </form>
+
+        </div>
+
+</div>
+<%- include('./partials/footer.ejs') %>
+
+        <script src="public/script.js" async defer></script>
+    </body>
+</html>

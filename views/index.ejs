@@ -1,38 +1,7 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Library</title>
-        <meta name="description" content="my books and reading">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-
+<%- include('./partials/head.ejs') %>
+<link rel="stylesheet" href="main.css">
 <!------------------------- NAV ----------------------------------------->
-        <nav>
-            <div class="nav nav-black">
-                <div class="nav nav-red">
-                    <div class="nav nav-white">
-                        <button class="nav-btn close-btn">
-                            <i class="fas fa-times"></i>
-                        </button>
-
-                        <img src="img/logo.jpg" alt="logo" class="logo">
-
-                        <ul class="list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Request</a></li>
-                            <li><a href="#">Add</a></li>
-                            <li><a href="#">Quotes</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+<%- include('./partials/nav.ejs') %>
 <!------------------------- HEADER --------------------------------------->
         
 
@@ -41,32 +10,9 @@
 
     <div class="main-container">
         
-<!-------------------------- HEAD ----------------->
+<!-------------------------- HEADER ----------------->
 
-                <div class="head">
-                    <button class="nav-btn open-btn">
-                        <i class="fas fa-bars"></i>
-                    </button>
-
-                    <div class="search">
-                        <input type="text" class="search-input" placeholder="Search...">
-                        <button class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-
-                    <h1>My Library</h1>
-
-                    <div class="your-account">
-                        <div class="log-in">
-                            <button class="log-in-btn">Log In</button>
-                        </div>
-                        <div class="subscribe">
-                            <button class="subscribe-btn">Subscribe</button>
-                        </div>
-                    </div>
-
-                </div>
+<%- include('./partials/header.ejs') %>
 <div class="divider"></div>
 <!-------------------------- ASIDE ----------------->
         <aside>
@@ -237,17 +183,8 @@
 <!---------------------- END OF CONTAINER ------------------------------------------------------>
 <div class="divider"></div>    
 
-
 </div>
-<footer>
-    <div class="footer-container">
-        
-        <div class="footer-grid trademark">
-            <div class="trademark">&copy;2020 - Designed and Developed by Silvia Kay</div>
-        </div>
-    </div>
-</footer>
-
+<%- include('./partials/footer.ejs') %>
 
         <script src="public/script.js" async defer></script>
     </body>

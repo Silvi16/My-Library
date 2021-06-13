@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --body-color: #fff;
+    --base-color: #ECE1D6;
+    --main-color: #DBD0C6;
+    --first-color: #786E65;
+    --second-color: #645A52;
+    --third-color: #190F03;
+    --shadow-color: #554234;
+    --continue-color: #00AA93;
+    --input-color: #eeeded;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: 'Cormorant Garamont', serif;
+    height: calc(100vh + 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.form-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.request-container {
+    background-color: var(--body-color);
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: var(--body-color);
+    box-shadow: 2px -3px 6px 2px var(--shadow-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding: 100px 70px;
+}
+
+label {
+    color: var(--shadow-color);
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.request-input {
+    margin-bottom: 20px;
+    background-color: var(--input-color);
+    width: 90%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: solid 1px var(--first-color);
+}
+
+.request-title {
+    color: var(--shadow-color);
+    position: absolute;
+    font-size: 1.5rem;
+    padding-top: 40px;
+    
+}
+
+.request-submit {
+    background-color: var(--first-color);
+    color: var(--base-color);
+    box-shadow: 2px -3px 6px 2px var(--shadow-color);
+    width: 170px;
+    height: 40px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+/*********** NAV ************************************/
+.text {
+    text-transform: uppercase;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-left: 15px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.nav-btn {
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.nav.visible {
+    transform: translateX(0);
+}
+
+.nav-black {
+    background-color: var(--third-color);
+    width: 60%;
+    max-width: 100px;
+    min-width: 280px;
+    transition-delay: 0.2s;
+}
+
+.nav-black.visible {
+    transition-delay: 0s;
+}
+
+.nav-red {
+    background-color: var(--second-color);
+    width: 95%;
+    transition-delay: 0.1s;
+}
+
+.nav-red.visible {
+    transition-delay: 0.1s;
+}
+
+.nav-white {
+    background-color: var(--body-color);
+    width: 95%;
+    padding: 40px;
+    position: relative;
+    transition-delay: 0s;
+}
+
+.nav-white.visible {
+    transition-delay: 0.2s;
+}
+
+.close-btn {
+    background-color: var(--body-color);
+    opacity: 0.3;
+    position: absolute;
+    top: 4%;
+    right: 30px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 80px;
+}
+
+.list li {
+    margin: 20px 0;
+}
+
+.list li a {
+    color: var(--black-color);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+.list  ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/*********** HEADER ******************************/
+.head {
+    background-color: var(--body-color);
+    /*border: 1px solid var(--first-color);*/
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.open-btn {
+    background-color: var(--body-color);
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+h1 {
+    color: var(--shadow-color);
+    height: 60px;
+    width: 600px;
+    margin-left: 600px;
+    vertical-align: middle;
+    font-size: 3.5rem;
+    font-style: italic;
+    letter-spacing: 0.7rem;
+}
+
+.head p {
+    vertical-align: middle;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/********* SEARCH *****************************/
+.search {
+    vertical-align: middle;
+    position: relative;
+    margin-left: 50px;
+}
+
+.search .search-input {
+    background-color: var(--main-color);
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+    
+}
+
+.search-btn {
+    background-color: var(--body-color);
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+    
+}
+
+.search-btn:focus,
+.search-input:focus {
+    outline: none;
+}
+
+.search.active .search-input {
+    width: 200px;
+}
+
+.search.active .search-btn {
+    transform: translateX(198px);
+}
+
+.your-account {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 180px;
+    height: 50px;
+    
+}
+
+.log-in {
+    vertical-align: middle;
+    position: relative;
+    padding-left: 20px;
+}
+
+.subscribe {
+    vertical-align: middle;
+    position: relative;
+    /*padding-left: -20px;*/
+}
+
+.log-in-btn {
+    font-family: inherit;
+    font-size: 1.1rem;
+    background-color: var(--body-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.subscribe-btn {
+    height: 30px;
+    font-size: 1.1rem;
+    background-color: var(--body-color);
+    font-family: inherit;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 2px -3px 6px 2px var(--shadow-color);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 20px;
+}
+
+/***************** FOOTER *******************************/
+.footer-container {
+    background-color: var(--third-color);
+    width: 100vw;
+    height: 120px;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 70px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}

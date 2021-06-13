@@ -1,0 +1,29 @@
+<%- include('./partials/head.ejs') %>
+<link rel="stylesheet" href="quotes.css">
+<!------------------------- NAV ----------------------------------------->
+<%- include('./partials/nav.ejs') %>
+<!----------------------- MAIN CONTAINER --------------------------------->
+
+<div class="request-container">
+
+<!-------------------------- HEADER ----------------->
+<%- include('./partials/header.ejs') %>
+
+<form action="/" method="post">
+<label for="title">Title</label>
+<input type="text">
+<label for="name">Name</label>
+<input type="text">
+<label for="genre">Genre</label>
+<input type="text">
+<label for="language">Language</label>
+<input type="text">
+</form>
+
+
+</div>
+<%- include('./partials/footer.ejs') %>
+
+        <script src="public/script.js" async defer></script>
+    </body>
+</html>
